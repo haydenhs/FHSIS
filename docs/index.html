@@ -1,0 +1,75 @@
+<html>
+<head>
+<title>
+Project info
+</title>
+</head>
+
+
+<body  bgcolor="#FFFFFF">
+
+<h1>
+<center>
+Fast Hyperspectral Image Sharpening using Learned Affine Transforms
+</center>
+</h1>
+
+<!--
+<p align="center">
+Author1, Author2, Author3, ...
+</p>
+-->
+
+<p align="center">
+    2021, Submitted to ACM MM
+</p>
+
+<center>
+    <img src="images/FHSIS.png" alt="" width=60%>
+</center>
+
+<h2> Abstract </h2>
+<p>
+    Hyperspectral images (HSIs) contain rich spectral information and
+    are an important data source for many visual applications. Compared
+    with RGB images, the application of HSI is limited due to the
+    tradeoff between the spatial and spectral resolution in hyperspectral
+    imaging systems. In this paper, we present a fast HSI sharpening
+    (FHSIS) model for the super-resolution of a low spatial resolution
+    (LR) HSI with the help of an auxiliary high spatial resolution (HR)
+    RGB image. Different from the existing HSI and RGB image fusion
+    based super-resolution methods, which predict the HR HSI image
+    in an end-to-end manner, we directly predict the inverse spectral
+    response and map the RGB image back to the HSI space using
+    affine transforms. Specifically, the proposed method tries to learn
+    a coarse grid (with a set of spectral bases) from the input LR HSI
+    and a HR weight map from the HR RGB image. Combining the
+    spectral bases and the weight map in a grid upsampling module,
+    we can generate a per-pixel affine transform for the target HR HSI
+    and directly apply it to the HR RGB to obtain a super-resolved HR
+    HSI. Extensive experiments have demonstrated that our purposed
+    method is comparable to state-of-the-art methods with much faster
+    running speed.</p>
+
+<h3> Grid Upsampling Module </h3>
+
+<center>
+    <img src="images/gridup.png" alt="" width=40%>
+</center>
+
+<h3> Objective results </h3>
+
+<center>
+    <img src="images/objective.png" alt="" width=40%>
+</center>
+
+<h3> Subjective results </h3>
+
+<center>
+    <img src="images/subjective.png" alt="" width=40%>
+</center>
+
+<hr>
+
+</body>
+</html>
